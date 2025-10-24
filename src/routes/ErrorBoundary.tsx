@@ -1,4 +1,4 @@
-import { isRouteErrorResponse, useRouteError } from "react-router";
+import { isRouteErrorResponse, useRouteError } from 'react-router';
 
 export function ErrorBoundary() {
     const error = useRouteError();
@@ -15,13 +15,13 @@ export function ErrorBoundary() {
     } else if (error instanceof Error) {
         return (
             <div>
-                <h1>Error</h1>
+                <h1>ERROR</h1>
                 <p>{error.message}</p>
-                <p>The stack trace is:</p>
+                <p>STACK TRACE: </p>
                 <pre>{error.stack}</pre>
             </div>
         );
     } else {
-        return <h1>Unknown Error</h1>;
+        return <h1>UNKNOWN ERROR</h1>;
     }
 }

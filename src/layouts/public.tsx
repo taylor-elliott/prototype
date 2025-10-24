@@ -6,8 +6,7 @@ const PublicLayout = () => {
     return (
         <>
             <Navbar />
-            <h1>PublicLayout</h1>
-            <div>
+            <div className="">
                 <Outlet />
             </div>
             <Footer />

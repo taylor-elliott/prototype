@@ -1,11 +1,14 @@
 import { Outlet } from "react-router-dom";
+import Navbar from "src/components/Navbar";
 
 const ProtectedLayout = () => {
     return (
-        <div>
-            <h1>ProtectedLayout</h1>
-            <Outlet />
-        </div>
+        <>
+            <Navbar />
+            <div className="">
+                <Outlet />
+            </div>
+        </>
     );
 };
 
